@@ -4,6 +4,9 @@ package net.cozystudios.tokimistoolshed.item;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.item.Items;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.TagKey;
+import net.minecraft.util.Identifier;
 
 public enum ModToolMaterials implements ToolMaterial {
     WOOD(144, 2.0f, 1.0f, 0, 10, Ingredient.ofItems(Items.OAK_PLANKS)),
@@ -13,7 +16,7 @@ public enum ModToolMaterials implements ToolMaterial {
     GOLD(81, 12.0f, 1.0f, 1, 4, Ingredient.ofItems(Items.GOLD_INGOT)),
     DIAMOND(3906, 8.0f, 2.5f, 3, 10, Ingredient.ofItems(Items.DIAMOND)),
     NETHERITE(5076, 9.0f, 3.0f, 4, 15, Ingredient.ofItems(Items.NETHERITE_INGOT)),
-    OBSIDIAN(4000, 8.5f, 2.75f, 4, 12, Ingredient.ofItems(Items.OBSIDIAN));
+    OBSIDIAN(4000, 8.5f, 2.75f, 4, 12, Ingredient.fromTag(TagKey.of(RegistryKeys.ITEM, new Identifier("obsidianequipmentrework", "obsidian_ingots"))));
 
     private final int durability;
     private final float miningSpeedMultiplier;
@@ -55,8 +58,10 @@ public enum ModToolMaterials implements ToolMaterial {
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
+import net.minecraft.util.Identifier;
 
 public enum ModToolMaterials implements ToolMaterial {
     WOOD(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 250, 4.0f, 1.0f, 10, Ingredient.ofItems(Items.OAK_PLANKS)),
@@ -66,7 +71,7 @@ public enum ModToolMaterials implements ToolMaterial {
     GOLD(BlockTags.INCORRECT_FOR_GOLD_TOOL, 65, 12.0f, 1.0f, 4, Ingredient.ofItems(Items.GOLD_INGOT)),
     DIAMOND(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 2850, 8.0f, 2.5f, 10, Ingredient.ofItems(Items.DIAMOND)),
     NETHERITE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 6500, 9.0f, 3.0f, 15, Ingredient.ofItems(Items.NETHERITE_INGOT)),
-    OBSIDIAN(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 4000, 8.5f, 2.75f, 12, Ingredient.ofItems(Items.OBSIDIAN));
+    OBSIDIAN(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 4000, 8.5f, 2.75f, 12, Ingredient.fromTag(TagKey.of(RegistryKeys.ITEM, Identifier.of("obsidianequipmentrework", "obsidian_ingots"))));
 
     private final TagKey<Block> inverseTag;
     private final int durability;
@@ -114,6 +119,7 @@ import net.minecraft.util.Identifier;
 
 public class ModToolMaterials {
     private static final TagKey<Item> COPPER_REPAIR_MATERIALS = TagKey.of(RegistryKeys.ITEM, Identifier.of("tokimistoolshed", "copper_repair_materials"));
+    private static final TagKey<Item> OBSIDIAN_REPAIR_MATERIALS = TagKey.of(RegistryKeys.ITEM, Identifier.of("obsidianequipmentrework", "obsidian_ingots"));
 
     public static final ToolMaterial WOOD = new ToolMaterial(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 250, 4.0f, 1.0f, 10, ItemTags.PLANKS);
     public static final ToolMaterial STONE = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL, 600, 5.0f, 1.5f, 8, ItemTags.STONE_TOOL_MATERIALS);
@@ -126,6 +132,6 @@ public class ModToolMaterials {
     public static final ToolMaterial GOLD = new ToolMaterial(BlockTags.INCORRECT_FOR_GOLD_TOOL, 65, 12.0f, 1.0f, 4, ItemTags.GOLD_TOOL_MATERIALS);
     public static final ToolMaterial DIAMOND = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 2850, 8.0f, 2.5f, 10, ItemTags.DIAMOND_TOOL_MATERIALS);
     public static final ToolMaterial NETHERITE = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 6500, 9.0f, 3.0f, 15, ItemTags.NETHERITE_TOOL_MATERIALS);
-    public static final ToolMaterial OBSIDIAN = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 4000, 8.5f, 2.75f, 12, ItemTags.DIAMOND_TOOL_MATERIALS);
+    public static final ToolMaterial OBSIDIAN = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 4000, 8.5f, 2.75f, 12, OBSIDIAN_REPAIR_MATERIALS);
 }
 *///?}
