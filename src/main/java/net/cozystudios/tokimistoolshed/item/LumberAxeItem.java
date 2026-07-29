@@ -1,5 +1,6 @@
 package net.cozystudios.tokimistoolshed.item;
 
+import net.cozystudios.tokimistoolshed.compat.JobsPlusCompat;
 import net.cozystudios.tokimistoolshed.util.LeafDecayScheduler;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -95,6 +96,8 @@ public class LumberAxeItem extends AxeItem {
                 if (!isCreative) {
                     allDrops.addAll(Block.getDroppedStacks(logState, serverWorld, logPos, world.getBlockEntity(logPos), miner, stack));
                 }
+
+                JobsPlusCompat.fireBreakBlockEvent(serverPlayer, serverWorld, logPos, logState, stack);
 
                 world.removeBlock(logPos, false);
             }
