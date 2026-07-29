@@ -5,22 +5,39 @@ build/
 
 # Runtime
 run/
+runs/
 
-# IDE
+# IDE - IntelliJ
 .idea/
 *.iml
 *.ipr
 *.iws
+
+# IDE - VSCode
 .vscode/
+
+# IDE - Eclipse
 .settings/
 .classpath
 .project
 bin/
+
+# IDE - NetBeans
+nbproject/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+# IDE - misc
 out/
 
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Fabric Loom
 remappedSrc/
+
+# Logs
+*.log

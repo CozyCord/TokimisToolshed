@@ -10,6 +10,7 @@ import net.minecraft.world.item.ToolMaterial;
 
 public class ModToolMaterials {
     private static final TagKey<Item> COPPER_REPAIR_MATERIALS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath("tokimistoolshed", "copper_repair_materials"));
+    private static final TagKey<Item> OBSIDIAN_REPAIR_MATERIALS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath("obsidianequipmentrework", "obsidian_ingots"));
 
     public static final ToolMaterial WOOD = new ToolMaterial(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 250, 4.0f, 1.0f, 10, ItemTags.PLANKS);
     public static final ToolMaterial STONE = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL, 600, 5.0f, 1.5f, 8, ItemTags.STONE_TOOL_MATERIALS);
@@ -18,5 +19,5 @@ public class ModToolMaterials {
     public static final ToolMaterial GOLD = new ToolMaterial(BlockTags.INCORRECT_FOR_GOLD_TOOL, 65, 12.0f, 1.0f, 4, ItemTags.GOLD_TOOL_MATERIALS);
     public static final ToolMaterial DIAMOND = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 2850, 8.0f, 2.5f, 10, ItemTags.DIAMOND_TOOL_MATERIALS);
     public static final ToolMaterial NETHERITE = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 6500, 9.0f, 3.0f, 15, ItemTags.NETHERITE_TOOL_MATERIALS);
-    public static final ToolMaterial OBSIDIAN = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 4000, 8.5f, 2.75f, 12, ItemTags.DIAMOND_TOOL_MATERIALS);
+    public static final ToolMaterial OBSIDIAN = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 4000, 8.5f, 2.75f, 12, OBSIDIAN_REPAIR_MATERIALS);
 }
