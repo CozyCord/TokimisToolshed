@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    "RS ",
+    " S "
+  ],
+  "key": {
+    "R": "#tokimistoolshed:rose_gold_repair_materials",
+    "S": "minecraft:stick"
+  },
+  "result": { "id": "tokimistoolshed:rose_gold_scythe", "count": 1 }
+}

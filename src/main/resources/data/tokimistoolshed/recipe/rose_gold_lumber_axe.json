@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    "RRS",
+    " S "
+  ],
+  "key": {
+    "R": "#tokimistoolshed:rose_gold_repair_materials",
+    "S": "minecraft:stick"
+  },
+  "result": { "id": "tokimistoolshed:rose_gold_lumber_axe", "count": 1 }
+}

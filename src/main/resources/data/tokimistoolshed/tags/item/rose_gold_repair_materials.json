@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "additionaladditions:rose_gold_ingot", "required": false },
+    { "id": "additionaladditions:rose_gold_alloy", "required": false }
+  ]
+}

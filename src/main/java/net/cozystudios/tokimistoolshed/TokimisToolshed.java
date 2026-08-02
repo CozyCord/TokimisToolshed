@@ -2,6 +2,7 @@ package net.cozystudios.tokimistoolshed;
 
 import net.cozystudios.tokimistoolshed.compat.CopperCompat;
 import net.cozystudios.tokimistoolshed.compat.ObsidianCompat;
+import net.cozystudios.tokimistoolshed.compat.RoseGoldCompat;
 import net.cozystudios.tokimistoolshed.item.ExcavatorItem;
 import net.cozystudios.tokimistoolshed.item.HammerItem;
 import net.cozystudios.tokimistoolshed.item.ClippersItem;
@@ -73,6 +74,11 @@ public class TokimisToolshed implements ModInitializer {
 			ObsidianCompat.register();
 			LOGGER.info("Obsidian Equipment Reworked detected! Registering obsidian excavator and hammer.");
 		}
+
+		if (FabricLoader.getInstance().isModLoaded("additionaladditions")) {
+			RoseGoldCompat.register();
+			LOGGER.info("Additional Additions detected! Registering rose gold tools.");
+		}
 	}
 
 	public static final ItemGroup ITEM_GROUP = Registry.register(
@@ -102,6 +108,9 @@ public class TokimisToolshed implements ModInitializer {
 							entries.add(ObsidianCompat.OBSIDIAN_EXCAVATOR);
 						}
 						entries.add(ModItems.NETHERITE_EXCAVATOR);
+							if (RoseGoldCompat.ROSE_GOLD_EXCAVATOR != null) {
+								entries.add(RoseGoldCompat.ROSE_GOLD_EXCAVATOR);
+							}
 						entries.add(ModItems.WOODEN_HAMMER);
 						entries.add(ModItems.STONE_HAMMER);
 						//? if <1.21.9 {
@@ -118,6 +127,9 @@ public class TokimisToolshed implements ModInitializer {
 							entries.add(ObsidianCompat.OBSIDIAN_HAMMER);
 						}
 						entries.add(ModItems.NETHERITE_HAMMER);
+							if (RoseGoldCompat.ROSE_GOLD_HAMMER != null) {
+								entries.add(RoseGoldCompat.ROSE_GOLD_HAMMER);
+							}
 						entries.add(ModItems.WOODEN_SCYTHE);
 						entries.add(ModItems.STONE_SCYTHE);
 						//? if <1.21.9 {
@@ -134,6 +146,9 @@ public class TokimisToolshed implements ModInitializer {
 							entries.add(ObsidianCompat.OBSIDIAN_SCYTHE);
 						}
 						entries.add(ModItems.NETHERITE_SCYTHE);
+							if (RoseGoldCompat.ROSE_GOLD_SCYTHE != null) {
+								entries.add(RoseGoldCompat.ROSE_GOLD_SCYTHE);
+							}
 						entries.add(ModItems.WOODEN_LUMBER_AXE);
 						entries.add(ModItems.STONE_LUMBER_AXE);
 						//? if <1.21.9 {
@@ -150,6 +165,9 @@ public class TokimisToolshed implements ModInitializer {
 							entries.add(ObsidianCompat.OBSIDIAN_LUMBER_AXE);
 						}
 						entries.add(ModItems.NETHERITE_LUMBER_AXE);
+							if (RoseGoldCompat.ROSE_GOLD_LUMBER_AXE != null) {
+								entries.add(RoseGoldCompat.ROSE_GOLD_LUMBER_AXE);
+							}
 						entries.add(ModItems.CLIPPERS);
 						entries.add(ModItems.COPPER_BUCKET);
 						entries.add(ModItems.COPPER_WATER_BUCKET);
