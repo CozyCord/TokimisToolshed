@@ -40,5 +40,10 @@
   "item.tokimistoolshed.copper_milk_bucket": "Copper Milk Bucket",
   "item.tokimistoolshed.trowel": "Trowel",
   "item.tokimistoolshed.abacus": "Abacus",
-  "tag.item.tokimistoolshed.copper_repair_materials": "Copper Repair Materials"
+  "tag.item.tokimistoolshed.copper_repair_materials": "Copper Repair Materials",
+  "tag.item.tokimistoolshed.rose_gold_repair_materials": "Rose Gold Repair Materials",
+  "item.tokimistoolshed.rose_gold_excavator": "Rose Gold Excavator",
+  "item.tokimistoolshed.rose_gold_hammer": "Rose Gold Hammer",
+  "item.tokimistoolshed.rose_gold_scythe": "Rose Gold Scythe",
+  "item.tokimistoolshed.rose_gold_lumber_axe": "Rose Gold Lumber Axe"
 }
