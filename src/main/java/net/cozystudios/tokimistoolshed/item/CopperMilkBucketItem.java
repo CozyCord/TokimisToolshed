@@ -2,7 +2,7 @@ package net.cozystudios.tokimistoolshed.item;
 
 import java.util.function.Consumer;
 import java.util.function.Supplier;
-import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.advancements.triggers.CriteriaTriggers;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;

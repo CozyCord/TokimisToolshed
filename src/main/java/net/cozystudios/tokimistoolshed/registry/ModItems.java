@@ -11,6 +11,9 @@ import net.cozystudios.tokimistoolshed.item.CopperPowderSnowBucketItem;
 import net.cozystudios.tokimistoolshed.item.LumberAxeItem;
 import net.cozystudios.tokimistoolshed.item.ScytheItem;
 import net.cozystudios.tokimistoolshed.item.AbacusItem;
+import net.cozystudios.tokimistoolshed.item.ChiselItem;
+import net.cozystudios.tokimistoolshed.item.ChiselTier;
+import net.cozystudios.tokimistoolshed.item.ManualItem;
 import net.cozystudios.tokimistoolshed.item.TrowelItem;
 import net.fabricmc.fabric.api.registry.FuelValueEvents;
 import net.minecraft.core.Registry;
@@ -65,6 +68,11 @@ public class ModItems {
     public static Item TROWEL;
 
     public static Item ABACUS;
+
+    public static Item IRON_CHISEL;
+    public static Item DIAMOND_CHISEL;
+
+    public static Item MANUAL;
 
     private static Item.Properties settings(String name) {
         return new Item.Properties()
@@ -129,6 +137,11 @@ public class ModItems {
         TROWEL = registerBucket("trowel", new TrowelItem(settings("trowel").stacksTo(1)));
 
         ABACUS = registerBucket("abacus", new AbacusItem(settings("abacus").stacksTo(1)));
+
+        IRON_CHISEL = registerBucket("iron_chisel", new ChiselItem(ChiselTier.IRON, settings("iron_chisel").stacksTo(1)));
+        DIAMOND_CHISEL = registerBucket("diamond_chisel", new ChiselItem(ChiselTier.DIAMOND, settings("diamond_chisel").stacksTo(1)));
+
+        MANUAL = registerBucket("manual", new ManualItem(settings("manual").stacksTo(1)));
 
         registerFuels();
     }

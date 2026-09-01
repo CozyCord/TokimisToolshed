@@ -28,7 +28,7 @@ public class AbacusHudRenderer {
     private static void renderHud(GuiGraphicsExtractor drawContext) {
         Minecraft client = Minecraft.getInstance();
         if (client.player == null || client.level == null) return;
-        if (client.options.hideGui) return;
+        if (client.gui.hud.isHidden()) return;
 
         ItemStack abacusStack = getHeldAbacus(client);
         if (abacusStack == null || !AbacusItem.isBound(abacusStack)) return;
