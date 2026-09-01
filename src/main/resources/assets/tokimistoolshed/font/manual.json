@@ -1,0 +1,94 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "tokimistoolshed:item/iron_excavator.png",
+      "ascent": 12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "tokimistoolshed:item/iron_hammer.png",
+      "ascent": 12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "tokimistoolshed:item/iron_scythe.png",
+      "ascent": 12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "tokimistoolshed:item/iron_lumber_axe.png",
+      "ascent": 12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "tokimistoolshed:item/clippers.png",
+      "ascent": 12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "tokimistoolshed:item/iron_chisel.png",
+      "ascent": 12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "tokimistoolshed:item/trowel.png",
+      "ascent": 12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "tokimistoolshed:item/abacus.png",
+      "ascent": 12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "tokimistoolshed:item/copper_bucket.png",
+      "ascent": 12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "tokimistoolshed:item/diamond_chisel.png",
+      "ascent": 12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    }
+  ]
+}

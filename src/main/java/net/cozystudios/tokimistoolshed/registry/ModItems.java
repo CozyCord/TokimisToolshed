@@ -11,6 +11,9 @@ import net.cozystudios.tokimistoolshed.item.CopperPowderSnowBucketItem;
 import net.cozystudios.tokimistoolshed.item.LumberAxeItem;
 import net.cozystudios.tokimistoolshed.item.ScytheItem;
 import net.cozystudios.tokimistoolshed.item.AbacusItem;
+import net.cozystudios.tokimistoolshed.item.ChiselItem;
+import net.cozystudios.tokimistoolshed.item.ChiselTier;
+import net.cozystudios.tokimistoolshed.item.ManualItem;
 import net.cozystudios.tokimistoolshed.item.TrowelItem;
 import net.minecraft.fluid.Fluids;
 //? if <1.21.2 {
@@ -75,6 +78,11 @@ public class ModItems {
     public static Item TROWEL;
 
     public static Item ABACUS;
+
+    public static Item IRON_CHISEL;
+    public static Item DIAMOND_CHISEL;
+
+    public static Item MANUAL;
 
     private static Item.Settings settings(String name) {
         //? if >=1.21.2 {
@@ -147,6 +155,11 @@ public class ModItems {
         TROWEL = registerBucket("trowel", new TrowelItem(settings("trowel").maxCount(1)));
 
         ABACUS = registerBucket("abacus", new AbacusItem(settings("abacus").maxCount(1)));
+
+        IRON_CHISEL = registerBucket("iron_chisel", new ChiselItem(ChiselTier.IRON, settings("iron_chisel").maxCount(1)));
+        DIAMOND_CHISEL = registerBucket("diamond_chisel", new ChiselItem(ChiselTier.DIAMOND, settings("diamond_chisel").maxCount(1)));
+
+        MANUAL = registerBucket("manual", new ManualItem(settings("manual").maxCount(1)));
 
         registerFuels();
     }

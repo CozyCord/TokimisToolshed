@@ -3,6 +3,7 @@ package net.cozystudios.tokimistoolshed;
 import net.cozystudios.tokimistoolshed.compat.CopperCompat;
 import net.cozystudios.tokimistoolshed.compat.ObsidianCompat;
 import net.cozystudios.tokimistoolshed.compat.RoseGoldCompat;
+import net.cozystudios.tokimistoolshed.network.ChiselNetworking;
 import net.cozystudios.tokimistoolshed.item.ExcavatorItem;
 import net.cozystudios.tokimistoolshed.item.HammerItem;
 import net.cozystudios.tokimistoolshed.item.ClippersItem;
@@ -59,6 +60,7 @@ public class TokimisToolshed implements ModInitializer {
 
 		ModItems.registerItems();
 		CopperBucketBehaviors.register();
+		ChiselNetworking.registerServer();
 
 		//? if <1.21.9 {
 		if (FabricLoader.getInstance().isModLoaded("copperagebackport")) {
@@ -176,6 +178,9 @@ public class TokimisToolshed implements ModInitializer {
 						entries.add(ModItems.COPPER_MILK_BUCKET);
 						entries.add(ModItems.TROWEL);
 						entries.add(ModItems.ABACUS);
+							entries.add(ModItems.IRON_CHISEL);
+							entries.add(ModItems.DIAMOND_CHISEL);
+							entries.add(ModItems.MANUAL);
 					})
 					.build()
 	);

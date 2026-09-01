@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " RR",
+    " SR",
+    "S  "
+  ],
+  "key": {
+    "R": { "tag": "tokimistoolshed:rose_gold_repair_materials" },
+    "S": { "item": "minecraft:stick" }
+  },
+  "result": { "item": "tokimistoolshed:rose_gold_excavator" }
+}

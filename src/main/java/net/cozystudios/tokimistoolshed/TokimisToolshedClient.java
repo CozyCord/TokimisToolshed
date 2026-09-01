@@ -2,6 +2,8 @@ package net.cozystudios.tokimistoolshed;
 
 import net.cozystudios.tokimistoolshed.client.AbacusHudRenderer;
 import net.cozystudios.tokimistoolshed.client.AbacusOutlineRenderer;
+import net.cozystudios.tokimistoolshed.client.ChiselHudRenderer;
+import net.cozystudios.tokimistoolshed.client.ManualClientHooks;
 import net.cozystudios.tokimistoolshed.item.ClippersItem;
 import net.cozystudios.tokimistoolshed.item.ExcavatorItem;
 import net.cozystudios.tokimistoolshed.item.HammerItem;
@@ -53,6 +55,8 @@ public class TokimisToolshedClient implements ClientModInitializer {
 
         AbacusOutlineRenderer.register();
         AbacusHudRenderer.register();
+        ChiselHudRenderer.register();
+        ManualClientHooks.register();
     }
 
     private void renderAOEOutline(WorldRenderContext context) {

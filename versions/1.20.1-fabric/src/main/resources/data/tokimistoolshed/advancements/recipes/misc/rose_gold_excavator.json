@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rose_gold": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "tokimistoolshed:rose_gold_repair_materials"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "tokimistoolshed:rose_gold_excavator"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_rose_gold",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tokimistoolshed:rose_gold_excavator"
+    ]
+  },
+  "sends_telemetry_event": false
+}

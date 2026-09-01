@@ -45,5 +45,20 @@
   "item.tokimistoolshed.rose_gold_excavator": "Rose Gold Excavator",
   "item.tokimistoolshed.rose_gold_hammer": "Rose Gold Hammer",
   "item.tokimistoolshed.rose_gold_scythe": "Rose Gold Scythe",
-  "item.tokimistoolshed.rose_gold_lumber_axe": "Rose Gold Lumber Axe"
+  "item.tokimistoolshed.rose_gold_lumber_axe": "Rose Gold Lumber Axe",
+  "item.tokimistoolshed.iron_chisel": "Iron Chisel",
+  "item.tokimistoolshed.diamond_chisel": "Diamond Chisel",
+  "item.tokimistoolshed.manual": "Tool Manual",
+  "item.tokimistoolshed.manual.page.1": "Tokimi's Toolshed\n\nTool Manual\n\nA reference for every tool in this mod. Turn pages with the arrows at the bottom.",
+  "item.tokimistoolshed.manual.page.2": "%s Excavator\n\nBreaks a 3x3 area of shovel-friendly blocks in one swing. Aim at the center block. Sneak while mining to break only that one block.",
+  "item.tokimistoolshed.manual.page.3": "%s Hammer\n\nBreaks a 3x3 area of pickaxe-friendly blocks in one swing. Aim at the center block. Sneak to break only that block.",
+  "item.tokimistoolshed.manual.page.4": "%s Scythe\n\nBreaks a 3x3 area of crops, saplings, or short plants at once. Also works as a hoe on soil. Sneak to disable the area effect.",
+  "item.tokimistoolshed.manual.page.5": "%s Lumber Axe\n\nFells an entire tree in one swing. Aim at any log of the tree. Sneak to chop only a single log. Works up to 256 logs per tree.",
+  "item.tokimistoolshed.manual.page.6": "%s Clippers\n\nActs like shears but affects a 3x3 area. Use on leaves, wool, cobwebs, or any block shears can cut. Sneak to shear one block.",
+  "item.tokimistoolshed.manual.page.7": "%s Iron Chisel\n%s Diamond Chisel\n\nReplaces a block you right-click with one from your inventory. Iron works on iron-tier blocks and below. Diamond works on everything. Repair in an anvil with iron ingots or diamonds. They wear out but do not break.",
+  "item.tokimistoolshed.manual.page.8": "%s Chisel Modes\n\nCopy Mode: uses the block in your off-hand.\n\nShuffle Mode: uses a random block from your hotbar.\n\nHold Left Alt and scroll the mouse wheel to switch modes.",
+  "item.tokimistoolshed.manual.page.9": "%s Silk Touch\n\nWithout an enchantment, a chisel drops what breaking the block normally would. Apply Silk Touch on an anvil to keep the original block instead.",
+  "item.tokimistoolshed.manual.page.10": "%s Trowel\n\nPlaces a random block from your hotbar when you right-click. Skips empty slots and the trowel itself. Useful for scattering variants across a build.",
+  "item.tokimistoolshed.manual.page.11": "%s Abacus\n\nRight-click a block to mark it. Right-click a second block to see the distance from the mark. A HUD readout appears while holding the abacus. Right-click the marked block again to unbind.",
+  "item.tokimistoolshed.manual.page.12": "%s Copper Bucket\n\nWorks like an iron bucket for water, lava, powder snow, and milk. Wears out after 16 uses instead of lasting forever."
 }

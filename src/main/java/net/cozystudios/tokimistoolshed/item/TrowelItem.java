@@ -12,6 +12,16 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+//? if <1.21 {
+import net.minecraft.client.item.TooltipContext;
+//?} else {
+/*import net.minecraft.item.tooltip.TooltipType;
+*///?}
+//? if >=1.21.5 {
+/*import net.minecraft.component.type.TooltipDisplayComponent;
+import net.minecraft.text.Text;
+import java.util.function.Consumer;
+*///?}
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -22,6 +32,26 @@ public class TrowelItem extends Item {
     public TrowelItem(Settings settings) {
         super(settings);
     }
+
+    //? if <1.21 {
+    @Override
+    public void appendTooltip(ItemStack stack, World world, java.util.List<net.minecraft.text.Text> tooltip, TooltipContext context) {
+        tooltip.add(net.minecraft.text.Text.literal("§7Places a random block from your hotbar"));
+        super.appendTooltip(stack, world, tooltip, context);
+    }
+    //?} elif <1.21.5 {
+    /*@Override
+    public void appendTooltip(ItemStack stack, Item.TooltipContext context, java.util.List<net.minecraft.text.Text> tooltip, TooltipType type) {
+        tooltip.add(net.minecraft.text.Text.literal("§7Places a random block from your hotbar"));
+        super.appendTooltip(stack, context, tooltip, type);
+    }
+    *///?} else {
+    /*@Override
+    public void appendTooltip(ItemStack stack, Item.TooltipContext context, TooltipDisplayComponent displayComponent, Consumer<Text> textConsumer, TooltipType type) {
+        textConsumer.accept(Text.literal("§7Places a random block from your hotbar"));
+        super.appendTooltip(stack, context, displayComponent, textConsumer, type);
+    }
+    *///?}
 
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
