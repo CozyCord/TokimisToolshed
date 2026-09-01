@@ -15,11 +15,21 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.component.TooltipDisplay;
+import java.util.function.Consumer;
 
 public class TrowelItem extends Item {
 
     public TrowelItem(Properties settings) {
         super(settings);
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context, TooltipDisplay displayComponent, Consumer<Component> textConsumer, TooltipFlag type) {
+        textConsumer.accept(Component.literal("§7Places a random block from your hotbar"));
+        super.appendHoverText(stack, context, displayComponent, textConsumer, type);
     }
 
     @Override

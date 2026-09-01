@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:book",
+    "#tokimistoolshed:tools"
+  ],
+  "result": { "id": "tokimistoolshed:manual", "count": 1 }
+}

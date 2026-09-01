@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "tokimistoolshed:iron_chisel",
+    "tokimistoolshed:diamond_chisel"
+  ]
+}

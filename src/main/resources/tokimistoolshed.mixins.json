@@ -8,6 +8,12 @@
 		"ItemIdMigrationMixin",
 		"ItemIdMigrationNbtMixin"
 	],
+	"client": [
+		"client.MouseHandlerMixin",
+		"client.BookViewScreenPageAccessor",
+		"client.BookViewScreenTextureMixin",
+		"client.PageButtonTextureMixin"
+	],
 	"injectors": {
 		"defaultRequire": 1
 	},

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  I",
+    " M ",
+    "S  "
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "M": "minecraft:smooth_stone",
+    "S": "minecraft:stick"
+  },
+  "result": { "id": "tokimistoolshed:iron_chisel", "count": 1 }
+}
