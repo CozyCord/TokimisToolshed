@@ -41,13 +41,13 @@ public class RoseGoldCompat {
         ROSE_GOLD_SCYTHE = Registry.register(
                 BuiltInRegistries.ITEM,
                 Identifier.fromNamespaceAndPath(TokimisToolshed.MOD_ID, "rose_gold_scythe"),
-                new ScytheItem(ModToolMaterials.ROSE_GOLD, 7.0F, -2.6F, settings("rose_gold_scythe"))
+                new ScytheItem(ModToolMaterials.ROSE_GOLD, 3.0F, -2.6F, settings("rose_gold_scythe"))
         );
 
         ROSE_GOLD_LUMBER_AXE = Registry.register(
                 BuiltInRegistries.ITEM,
                 Identifier.fromNamespaceAndPath(TokimisToolshed.MOD_ID, "rose_gold_lumber_axe"),
-                new LumberAxeItem(ModToolMaterials.ROSE_GOLD, 10.0F, -3.3F, settings("rose_gold_lumber_axe"))
+                new LumberAxeItem(ModToolMaterials.ROSE_GOLD, 7.0F, -3.3F, settings("rose_gold_lumber_axe"))
         );
     }
 }
