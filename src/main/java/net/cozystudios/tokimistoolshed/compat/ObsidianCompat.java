@@ -73,7 +73,7 @@ public class ObsidianCompat {
                 //?} else {
                 /*Identifier.of(TokimisToolshed.MOD_ID, "obsidian_lumber_axe"),
                 *///?}
-                new LumberAxeItem(ModToolMaterials.OBSIDIAN, 5.0F, -3.0F, settings("obsidian_lumber_axe").fireproof())
+                new LumberAxeItem(ModToolMaterials.OBSIDIAN, 6.75F, -3.0F, settings("obsidian_lumber_axe").fireproof())
         );
     }
 }

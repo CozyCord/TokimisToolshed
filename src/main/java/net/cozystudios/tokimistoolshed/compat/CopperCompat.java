@@ -63,7 +63,7 @@ public class CopperCompat {
                 //?} else {
                 /*Identifier.of(TokimisToolshed.MOD_ID, "copper_scythe"),
                 *///?}
-                new ScytheItem(ModToolMaterials.COPPER, 6.0F, -2.6F, settings("copper_scythe"))
+                new ScytheItem(ModToolMaterials.COPPER, 2.25F, -2.6F, settings("copper_scythe"))
         );
 
         COPPER_LUMBER_AXE = Registry.register(
@@ -73,7 +73,7 @@ public class CopperCompat {
                 //?} else {
                 /*Identifier.of(TokimisToolshed.MOD_ID, "copper_lumber_axe"),
                 *///?}
-                new LumberAxeItem(ModToolMaterials.COPPER, 10.0F, -3.4F, settings("copper_lumber_axe"))
+                new LumberAxeItem(ModToolMaterials.COPPER, 7.25F, -3.4F, settings("copper_lumber_axe"))
         );
 
     }
