@@ -23,6 +23,11 @@ public final class ManualBookViewScreen extends BookViewScreen {
     }
 
     @Override
+    public boolean isPauseScreen() {
+        return false;
+    }
+
+    @Override
     public void removed() {
         int page = ((BookViewScreenPageAccessor) (Object) this).tokimistoolshed$getCurrentPage();
         int max = ManualContent.pageCount() - 1;
