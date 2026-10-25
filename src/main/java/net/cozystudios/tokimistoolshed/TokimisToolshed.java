@@ -63,18 +63,25 @@ public class TokimisToolshed implements ModInitializer {
 		ChiselNetworking.registerServer();
 
 		//? if <1.21.9 {
-		if (FabricLoader.getInstance().isModLoaded("copperagebackport")) {
+		boolean copperAgeBackportLoaded = FabricLoader.getInstance().isModLoaded("copperagebackport");
+		boolean vanillaBackportLoaded = FabricLoader.getInstance().isModLoaded("vanillabackport");
+		if (copperAgeBackportLoaded || vanillaBackportLoaded) {
 			CopperCompat.register();
-			LOGGER.info("Copper Age Backport detected! Registering copper excavator and hammer.");
+			if (copperAgeBackportLoaded) {
+				LOGGER.info("Copper Age Backport detected! Registering copper tools.");
+			}
+			if (vanillaBackportLoaded) {
+				LOGGER.info("Vanilla Backport detected! Registering copper tools.");
+			}
 		}
 		//?} else {
 		/*CopperCompat.register();
-		LOGGER.info("Registering copper excavator and hammer.");
+		LOGGER.info("Registering copper tools.");
 		*///?}
 
 		if (FabricLoader.getInstance().isModLoaded("obsidianequipmentrework")) {
 			ObsidianCompat.register();
-			LOGGER.info("Obsidian Equipment Reworked detected! Registering obsidian excavator and hammer.");
+			LOGGER.info("Obsidian Equipment Reworked detected! Registering obsidian tools.");
 		}
 
 		if (FabricLoader.getInstance().isModLoaded("additionaladditions")) {
