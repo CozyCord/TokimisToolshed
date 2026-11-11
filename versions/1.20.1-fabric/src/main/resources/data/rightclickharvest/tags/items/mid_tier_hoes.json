@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "tokimistoolshed:golden_scythe",
+      "required": false
+    },
+    {
+      "id": "tokimistoolshed:diamond_scythe",
+      "required": false
+    }
+  ]
+}

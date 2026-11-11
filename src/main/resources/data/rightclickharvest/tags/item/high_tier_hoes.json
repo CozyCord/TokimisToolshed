@@ -1,6 +1,13 @@
 {
   "replace": false,
   "values": [
-    { "id": "tokimistoolshed:netherite_scythe", "required": false }
+    {
+      "id": "tokimistoolshed:netherite_scythe",
+      "required": false
+    },
+    {
+      "id": "tokimistoolshed:obsidian_scythe",
+      "required": false
+    }
   ]
 }
