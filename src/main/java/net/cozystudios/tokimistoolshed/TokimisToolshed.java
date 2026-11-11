@@ -58,11 +58,11 @@ public class TokimisToolshed implements ModInitializer {
 		ChiselNetworking.registerServer();
 
 		CopperCompat.register();
-		LOGGER.info("Registering copper excavator and hammer.");
+		LOGGER.info("Registering copper tools.");
 
 		if (FabricLoader.getInstance().isModLoaded("obsidianequipmentrework")) {
 			ObsidianCompat.register();
-			LOGGER.info("Obsidian Equipment Reworked detected! Registering obsidian excavator and hammer.");
+			LOGGER.info("Obsidian Equipment Reworked detected! Registering obsidian tools.");
 		}
 
 		if (FabricLoader.getInstance().isModLoaded("additionaladditions")) {

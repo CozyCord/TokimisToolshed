@@ -1,7 +1,17 @@
 {
   "replace": false,
   "values": [
-    { "id": "tokimistoolshed:iron_scythe", "required": false },
-    { "id": "tokimistoolshed:copper_scythe", "required": false }
+    {
+      "id": "tokimistoolshed:copper_scythe",
+      "required": false
+    },
+    {
+      "id": "tokimistoolshed:iron_scythe",
+      "required": false
+    },
+    {
+      "id": "tokimistoolshed:rose_gold_scythe",
+      "required": false
+    }
   ]
 }
